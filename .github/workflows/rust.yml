@@ -75,7 +75,7 @@ jobs:
             --soundbase-path "./soundbase" \
             --output "./soundbase/website" \
             --soundbase-prefix '../' \
-            --website-prefix "/website_test/website" \
+            --website-prefix "/website/website" \
             --radio-host "http://localhost:8080" \
             --player-url "./player"
 
