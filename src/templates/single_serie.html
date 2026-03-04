@@ -1,8 +1,10 @@
-<div class="single_serie" style="aspect-ratio: 0 !important; width: auto !important; margin-right = 0 !important;">
+<div class="audio-podcastsCards swiper-slide equal_heightSwiper" style="width: 30%;">
+	<div class="card-podcast" style = "aspect-ratio: 0 !important; width: auto !important; margin-right = 0 !important;">
+	<div class="single_serie" style="aspect-ratio: 0 !important; width: auto !important; margin-right = 0 !important;">
 
 		<a onclick="return internalNavigation(event)" href="{{data.oma.args.website_prefix}}/serie/{{serie._filename}}.html">
 			{% if serie.Photo %}
-				<img src="{{data.oma.args.soundbase_prefix}}/webpL/{{serie.Photo}}.webpL" />
+				<img src="{{data.oma.args.soundbase_prefix}}/webpL/{{item.Photo}}.webpL" />
 			{% elif data.config.Logo %}
 				<img src="{{data.oma.args.soundbase_prefix}}/webpL/{{data.config.Logo}}.webpL" alt="Logo de la radio" />
 			{% else %}
@@ -33,5 +35,7 @@
 				<img src="{{data.oma.args.website_prefix}}/img/plus.svg" />
 			</a>
 		</div>
-</div>
+	</div>
 
+	</div>
+</div>

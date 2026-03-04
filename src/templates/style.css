@@ -206,7 +206,6 @@ footer ul {
 .single_serie {
 	border: 3px #0000 solid;
 	border-radius: 20px;
-	width: 350px;
 	padding: 0;
 	margin: 5px;
 	background-color: #0000;
@@ -251,8 +250,8 @@ footer ul {
 }
 
 .single_serie > a > img, .single_serie > a {
-	height: 300px;
-	width: 300px;
+	height: fit-content;
+	width: fit-content;
 	vertical-align: top;
 	display: block;
 	margin: 5px auto;
@@ -267,8 +266,8 @@ footer ul {
 
 .single_serie .actions > a {
 	display: block;
-	width: 48px;
-	height: 48px;
+	width: 30%;
+	height: 30%;
 	/*border-bottom: 1px solid black;*/
 	text-align: center;
 }
@@ -283,7 +282,7 @@ footer ul {
 }
 
 .single_serie audio {
-	width: 100%;
+	width: fit-content;
 	vertical-align: top;
 	border-radius: 0 0 17px 17px;
 }
@@ -17226,7 +17225,7 @@ Pave-Bas2 : 300x250
   width: 100vw;
   position: relative;
   margin-left: calc(50% - 50vw);
-  background: #0c0c0e;
+  background: #1a1a1b;
 }
 .media-cards .swiper-container {
   opacity: 0;
@@ -17236,6 +17235,17 @@ Pave-Bas2 : 300x250
   opacity: 1;
 }
 
+.home .phone .media-cards::before
+{
+  content: "";
+  display: block;
+  height: 0% !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  background: #1a1a1b;
+}
 .home .media-cards::before {
   content: "";
   display: block;
@@ -17244,7 +17254,7 @@ Pave-Bas2 : 300x250
   left: 0;
   right: 0;
   bottom: 100%;
-  background: #0c0c0e;
+  background: #1a1a1b;
 }
 
 /*
