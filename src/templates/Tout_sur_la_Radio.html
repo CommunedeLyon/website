@@ -4,7 +4,7 @@
 
 <!-- Section principale : Header / Slider -->
 <section class="js-section_title header_slider theme-white">
-    <div class="header_slider--header" style="width: 75% !important;">
+    <div class="header_slider--header" >
         <div class="media">
             <img fetchpriority="high" width="1488" height="900" 
                  src="./wp-content/uploads/sites/images/Radio_grabuges.png" 
@@ -24,7 +24,7 @@
                 l'organisation des Anarchistes
             </div>
             <div class="description">
-                Dans ce sens, des rubriques d'émissions originales sont créées pour atteindre nos objectifs.
+                Des rubriques d'émissions originales sont créées pour atteindre nos objectifs : 
             </div>
 
             <!-- Slider des podcasts -->
@@ -33,16 +33,16 @@
                     <div class="swiper-wrapper">
                         
                         <!-- Podcast 1 -->
-                        <div class="audio-podcastsCards swiper-slide equal_heightSwiper" style="width: 30%;">
-                            <div class="card-podcast" style="padding: 0;">
+                        <div class="audio-podcastsCards swiper-slide equal_heightSwiper" style="width: 100%;margin-right: 20%;">
+                            <div class="card-podcast" style="padding: 0;width: 200px;">
                                 <a href="">
-                                    <img width="800" height="800" 
+                                    <img 
                                          src="./wp-content/uploads/sites/images/radio_logo.png" 
                                          class="attachment-cube-thumb size-cube-thumb wp-post-image" 
                                          alt="" decoding="async" 
                                          data-lazy-src="https://www.nova.fr/wp-content/thumbnails/uploads/sites/2/2024/08/la-derniere-1-t-800x800.jpg" />
                                     <noscript>
-                                        <img width="800" height="800" 
+                                        <img
                                              src="./wp-content/thumbnails/uploads/sites/2/2024/08/la-derniere-1-t-800x800.jpg" 
                                              class="attachment-cube-thumb size-cube-thumb wp-post-image" 
                                              alt="La dernière" decoding="async" />
@@ -50,22 +50,22 @@
                                 </a>
                                 <div class="card-podcast__content">
                                     <h2><a href="">Anarchistes, Sortez prendre l'air !</a></h2>
-                                    <p>Rubriques pour rencontrer l'autogestion et l'autonomie à Lyon</p>
+                                    <p>Chronique pour rencontrer l'autogestion et l'autonomie à Lyon et Villeurbanne</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Podcast 2 -->
-                        <div class="audio-podcastsCards swiper-slide equal_heightSwiper" style="width: 30%;">
-                            <div class="card-podcast" style="padding: 0;">
+                        <div class="audio-podcastsCards swiper-slide equal_heightSwiper" style="width: 100%;margin-right: 20%;">
+                            <div class="card-podcast" style="padding: 0;width: 200px;">
                                 <a href="">
-                                    <img width="800" height="800" 
+                                    <img 
                                          src="./wp-content/uploads/sites/images/radio_logo.png" 
                                          class="attachment-cube-thumb size-cube-thumb wp-post-image" 
                                          alt="La chronique de Guillaume Meurice" decoding="async" 
                                          data-lazy-src="https://www.nova.fr/wp-content/thumbnails/uploads/sites/2/2024/09/La-chronique-de-Guillaume-Meurice-t-800x800.jpg" />
                                     <noscript>
-                                        <img width="800" height="800" 
+                                        <img 
                                              src="./wp-content/uploads/sites/images/radio_logo.png" 
                                              class="attachment-cube-thumb size-cube-thumb wp-post-image" 
                                              alt="La chronique de Guillaume Meurice" decoding="async" />
@@ -73,22 +73,22 @@
                                 </a>
                                 <div class="card-podcast__content">
                                     <h2><a href="">L'Action Anarchiste</a></h2>
-                                    <p>Activités et organisations locales à Lyon</p>
+                                    <p>Chronique pour parler des activités anarchistes à Lyon et Villeurbanne</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Podcast 3 -->
-                        <div class="audio-podcastsCards swiper-slide equal_heightSwiper" style="width: 30%;">
-                            <div class="card-podcast" style="padding: 0;">
+                        <div class="audio-podcastsCards swiper-slide equal_heightSwiper" style="width: 100%;margin-right: 20%;">
+                            <div class="card-podcast" style="padding: 0;width: 200px;">
                                 <a href="">
-                                    <img width="800" height="800" 
+                                    <img 
                                          src="./wp-content/uploads/sites/images/radio_logo.png" 
                                          class="attachment-cube-thumb size-cube-thumb wp-post-image" 
                                          alt="La chronique de Juliette Arnaud" decoding="async" 
                                          data-lazy-src="https://www.nova.fr/wp-content/thumbnails/uploads/sites/2/2024/09/La-chronique-de-Juliette-Arnaud-t-800x800.jpg" />
                                     <noscript>
-                                        <img width="800" height="800" 
+                                        <img 
                                              src="./wp-content/uploads/sites/images/radio_logo.png" 
                                              class="attachment-cube-thumb size-cube-thumb wp-post-image" 
                                              alt="La chronique de Juliette Arnaud" decoding="async" />
@@ -96,12 +96,15 @@
                                 </a>
                                 <div class="card-podcast__content">
                                     <h2><a href="">L'organisation Anarchiste</a></h2>
-                                    <p>Penser et construire l'Anarchisme pour l'autonomie locale</p>
+                                    <p>Chronique pour penser et construire l'Anarchisme pour l'autonomie locale</p>
                                 </div>
                             </div>
                         </div>
 
                     </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
                 </div>
             </div>
 
@@ -109,8 +112,8 @@
     </div>
 </section>
 
-<!-- Section sélection de séries -->
-{% set serie = data.series | get(key="_Selection-Manuelle", default="") %}
+<!-- Section sélection de séries COMMENTAIRE A ENLEVER UNE FOIS LA RADIO FONCTIONNELLE
+ {% set serie = data.series | get(key="_Selection-Manuelle", default="") %}
 {% if serie %}
 <section>
     <h2>{{ serie | get(key="Titre", default="Notre sélection") }}</h2>
@@ -118,12 +121,15 @@
 </section>
 {% endif %}
 
+-->
+
+
 <!-- Section description radio -->
 <section id="radio">
     {% include "Description_liaison_radio.html" %}
 </section>
 
-<!-- Section autres séries -->
+<!-- COMMENTAIRE A ENLEVER UNE FOIS LA RADIO FONCTIONNELLE
 <section>
     <div class="header_slider--header">
         <div class="right">
@@ -132,6 +138,8 @@
     </div>
     {% include "last_series.html" %}
 </section>
+-->
+
 
 <!-- Section musiques radio -->
 <section>
