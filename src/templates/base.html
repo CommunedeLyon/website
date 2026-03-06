@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>{% block title %}{% endblock title %}{{ data.config.PrettyName }}</title>
+    <title>{% block title %}{% endblock title %}Effraie</title>
     <meta charset="utf-8" />
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -42,17 +42,27 @@
 										<div class="logo_site">
 																				<h1>
 													<a class="brand" href="{{data.oma.args.website_prefix}}/index.html">
-								<img class="logo logo-white" src="{{data.oma.args.website_prefix}}/img/logo_site_w.png" alt="Liaison commune de lyon" />
-								<img class="logo logo-black" src="{{data.oma.args.website_prefix}}/img/logo_site.png" alt="Liaison commune de lyon" />
+								<img onclick="initCanvas()" class="logo logo-white" src="{{data.oma.args.website_prefix}}/img/logo_site_w.png" alt="Liaison commune de lyon" />
+								<img onclick="initCanvas()" class="logo logo-black" src="{{data.oma.args.website_prefix}}/img/logo_site.png" alt="Liaison commune de lyon" />
 																					
 														</a>
 														</h1>
 												</div>
 								</div>
 				<div class="text-right col-md-4 col-4 right-part usernav_container">
+					
 					<div class="icons-header">
-						
-						
+						<div class ="no_phone">
+							<div class="ct-section-inner-wrap" >
+								<div id="div_block-52-1516" class="ct-div-block aos-reveal-ltr aos-init aos-animate" data-aos-enable="true" data-aos="fade">
+									<div id="text_block-50-1516" class="ct-text-block aos-revealtxt" style="color: white;font-size: 3vw;  height: -webkit-fill-available;  margin-bottom: 10px;  height: 50px;  align-content: center;">E.F.F.R.A.I.E.<br>
+									</div>
+									<div id="text_block-50-1516" class="ct-text-block aos-revealtxt" style="color: white;height: 20px;">Effort Fédéral pour une Radio Indépendante et Engagée<br>
+									</div>
+								</div>
+							</div>	
+						</div>
+					
 						<!--COMMENTAIRE A ENLEVER UNE FOIS LA RADIO FONCTIONNELLE
 						<div class="no_phone">
 						<h2>Écouter</h2>
@@ -95,7 +105,7 @@
 				<div class="row">
 									<div class="left-side">
 						<ul class="topLeft_nav">
-							<li class="search search_mob"><a href="javascript:void(0);"
+							<li class="search search_mob" style="display: none;"><a href="javascript:void(0);"
 									on="tap:AMP.setState( { popup_search: ! popup_search} )">Rechercher</a></li>
 
 						</ul>
@@ -159,9 +169,11 @@
 					<li id="menu-item-268581" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268581"><a href="{{data.oma.args.website_prefix}}/Tout_sur_la_Radio.html">La Radio</a></li>
 					<li id="menu-item-268581" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268581"><a href="{{data.oma.args.website_prefix}}/Événements.html">Événements</a></li>
 					<li id="menu-item-268581" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268581"><a href="{{data.oma.args.website_prefix}}/Activités_locales.html">Activités locales</a></li>
-					<li id="menu-item-268581" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268581"><a href="{{data.oma.args.website_prefix}}/index.html#réseau">Réseaux</a></li>
 					
-					<!--<li id="menu-item-268581" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268581"><a href="{{data.oma.args.website_prefix}}/Articles">Articles</a></li> -->
+					
+					<!--
+					<li id="menu-item-268581" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268581"><a href="{{data.oma.args.website_prefix}}/index.html#réseau">Réseaux</a></li>
+					<li id="menu-item-268581" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-268581"><a href="{{data.oma.args.website_prefix}}/Articles">Articles</a></li> -->
 
 					
 					</ul>
@@ -208,7 +220,7 @@
 				<link rel="stylesheet" id="custom-css" href="{{data.oma.args.website_prefix}}/wp-content/themes/lnei-wp-theme-child-nova/dist/customf9d8.css" type="text/css" media="all">
 			
 				<script type="text/javascript" src="{{data.oma.args.website_prefix}}/wp-content/themes/lnei-wp-theme/resources/assets/vendor/jquery-3.6.0.minf9df.js" id="jquery-js"></script>	
-					
+						
 				<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
 				
 				<link rel="icon" href="{{data.oma.args.website_prefix}}/img/cropped-favicon-4-t-64x64.png" sizes="32x32">
@@ -259,6 +271,18 @@
 
 		
 		</main>
+	
+		<div class ="phone">
+			<div class="ct-section-inner-wrap" >
+				<div id="div_block-52-1516" class="ct-div-block aos-reveal-ltr aos-init aos-animate" data-aos-enable="true" data-aos="fade">
+					<div id="text_block-50-1516" class="ct-text-block aos-revealtxt" style="color: #9ba3f8 ;font-size: 3vh;  height: -webkit-fill-available;  margin-bottom: auto;  height: 50px;  align-content: center;">E.F.F.R.A.I.E.<br>
+					</div>
+					<div id="text_block-50-1516" class="ct-text-block aos-revealtxt" style="color: #9ba3f8 ;height: 40px;">Effort Fédéral pour une Radio Indépendante et Engagée<br>
+					</div>
+				</div>
+			</div>
+		</div>
+	
 	</div>  
 
 	<section  class="stickyBar_menu d-lg-none d-block">
@@ -270,7 +294,7 @@
 				</a>
 			</div>
 			<div  class="col-4 full_height">
-				<a href="javascript:void(0)" class="link-stickyMenu search_toggle">
+				<a href="javascript:void(0)" class="link-stickyMenu search_toggle" style="display: none;">
 					<span class="icon-Search"></span>
 					Recherche
 				</a>
@@ -342,7 +366,7 @@
 		<!--
 			
 		-->
-		</script><link href="{{data.oma.args.player_url}}/app.css" rel="stylesheet">
+		<link href="{{data.oma.args.player_url}}/app.css" rel="stylesheet">
 		
 
 	</body>
